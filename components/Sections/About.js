@@ -19,7 +19,7 @@ export default function About() {
           </h2>
 
           <p
-            className={`text-justify text-lg w-11/12 text-slate-900 font-cairo relative ${
+            className={`text-justify text-base sm:text-lg  mx-auto w-11/12 text-slate-900 font-cairo relative ${
               isVisible ? 'slide-up' : ''
             }`}
           >
@@ -45,8 +45,8 @@ export default function About() {
             <span className="font-bold">UI/UX design, App Development, Pixel Art, Snowboarding, Cooking</span>{' '}
             and more !
             <br />
-            <br />I love making anything from simple animated components to fully responsive
-            (mobile-friendly), functional web apps with an integrated back-end & database.
+            <br />I love making anything from simple animated components to fully responsive, functional web
+            apps with an integrated back-end & database.
           </p>
 
           <div

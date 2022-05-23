@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 function BrickRow({ length, short, identifier }) {
   return (
     <div className={`flex w-full h-[10%] ${short ? '-translate-x-12' : ''}`}>
@@ -14,25 +12,13 @@ function BrickRow({ length, short, identifier }) {
           'bg-blue-200',
         ];
         const colour = colours[Math.floor(Math.random() * colours.length)];
-        return (
-          <div key={`${identifier} ${i}`} className={`w-[20%] ${colour} rounded m-0.5 animated-brick`} />
-        );
+        return <div key={`${identifier} ${i}`} className={`w-[20%] ${colour} rounded m-0.5 pulse`} />;
       })}
     </div>
   );
 }
 
 export default function BrickWall({ children }) {
-  useEffect(() => {
-    // Give the bricks a random interval before they start pulsing
-    const bricks = document.querySelectorAll('.animated-brick');
-    bricks.forEach((el) =>
-      setTimeout(() => {
-        el.classList.add('animate-pulse');
-      }, Math.random() * 5 * 1000)
-    );
-  }, []);
-
   return (
     <div className="relative overflow-hidden w-full h-screen flex justify-center items-center">
       {/* Small screen */}
