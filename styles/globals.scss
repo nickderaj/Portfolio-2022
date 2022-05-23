@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+@import './animations.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+}
+
+section:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: -30px;
+  width: 100%;
+  height: 30px;
+  background: inherit;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.highlight {
+  font-weight: 700;
+  background: linear-gradient(
+    120deg,
+    rgba(30, 41, 59, 0) 12%,
+    rgb(219 234 254) 24%,
+    rgba(191, 219, 254, 0.703) 54%,
+    rgba(219, 234, 254, 0.1) 80%,
+    rgba(130, 240, 255, 0) 88%
+  );
+  padding: 4px 18px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  line-height: 1.7rem;
+  text-shadow: -1px 1px 9.8px rgb(219 234 254), 1px -1px 7.3px rgb(219 234 254);
+}
