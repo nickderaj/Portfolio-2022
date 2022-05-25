@@ -2,8 +2,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import useIntersection from '../../hooks/useIntersection';
 
-function BlockLink({ link, name, bg, hover }) {
-  const linkRef = useRef();
+function BlockLink({ link, name, bg, hover, linkRef }) {
   const isVisible = useIntersection(linkRef);
 
   return (
@@ -14,7 +13,6 @@ function BlockLink({ link, name, bg, hover }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      ref={linkRef}
     >
       {name}
     </a>
@@ -22,6 +20,7 @@ function BlockLink({ link, name, bg, hover }) {
 }
 
 export default function Contact() {
+  const linkRef = useRef();
   return (
     <section className="bg-gradient-to-r from-amber-100 to-amber-200" id="contact">
       <div className="py-12 lg:py-20 px-10 lg:flex-row max-w-screen-xl mx-auto">
@@ -37,36 +36,41 @@ export default function Contact() {
           </a>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4" ref={linkRef}>
           <BlockLink
             name="Discord"
             link="https://discordapp.com/channels/@me/240122878740267008"
             bg="bg-rose-200"
             hover="hover:bg-rose-400"
+            linkRef={linkRef}
           />
           <BlockLink
             name="Email"
             link="mailto:nickderaj@gmail.com"
             bg="bg-teal-200"
             hover="hover:bg-teal-400"
+            linkRef={linkRef}
           />
           <BlockLink
             name="LinkedIn"
             link="https://www.linkedin.com/in/nickderaj/"
             bg="bg-fuchsia-200"
             hover="hover:bg-fuchsia-400"
+            linkRef={linkRef}
           />
           <BlockLink
             name="Twitter"
             link="https://twitter.com/nickderaj"
             bg="bg-blue-200"
             hover="hover:bg-blue-400"
+            linkRef={linkRef}
           />
           <BlockLink
             name="Instagram"
             link="https://www.instagram.com/nickderaj/"
             bg="bg-orange-200"
             hover="hover:bg-orange-400"
+            linkRef={linkRef}
           />
         </div>
       </div>
