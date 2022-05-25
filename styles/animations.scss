@@ -118,3 +118,25 @@
     transform: rotate(0);
   }
 }
+
+.shakey {
+  animation: shakey 4s infinite;
+}
+
+@keyframes shakey {
+  0% {
+    transform: skew(0);
+  }
+  10% {
+    transform: skew(4deg);
+  }
+  20% {
+    transform: skew(0);
+  }
+  30% {
+    transform: skew(-4deg);
+  }
+  40% {
+    transform: skew(0);
+  }
+}

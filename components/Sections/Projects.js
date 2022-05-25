@@ -16,7 +16,9 @@ export default function Projects() {
           <Image src="/svg/octocat.svg" alt="robot" width="50" height="50" />
         </a> */}
         <div className="h-full w-full flex flex-col items-center font-kalam text-lg gap-6 pt-20">
-          <Image src="/svg/saw.svg" width="100" height="100" alt="Maintenance" />
+          <div className="h-[100px] w-[100px] shakey">
+            <Image src="/svg/saw.svg" width="100" height="100" alt="Maintenance" />
+          </div>
           <p className="px-6 text-center relative">
             Section under construction, click the Octocat to view Github!{' '}
             <span className="text-2xl">&#8605;</span>
