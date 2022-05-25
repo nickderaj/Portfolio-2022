@@ -22,9 +22,9 @@ function BlockLink({ link, name, bg, hover, linkRef }) {
 export default function Contact() {
   const linkRef = useRef();
   return (
-    <section className="bg-gradient-to-r from-amber-100 to-amber-200" id="contact">
+    <section className="bg-gradient-to-r from-teal-100 to-teal-200" id="contact">
       <div className="py-12 lg:py-20 px-10 lg:flex-row max-w-screen-xl mx-auto">
-        <h2 className="w-max text-4xl sm:text-6xl font-bold text-amber-500 font-kalam pb-6 relative mx-auto">
+        <h2 className="w-max text-4xl sm:text-6xl font-bold text-teal-500 font-kalam pb-6 relative mx-auto">
           Contact
           <a
             className="absolute -left-12 -top-8 wiggle"
@@ -47,8 +47,8 @@ export default function Contact() {
           <BlockLink
             name="Email"
             link="mailto:nickderaj@gmail.com"
-            bg="bg-teal-200"
-            hover="hover:bg-teal-400"
+            bg="bg-lime-200"
+            hover="hover:bg-lime-500"
             linkRef={linkRef}
           />
           <BlockLink

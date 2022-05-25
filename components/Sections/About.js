@@ -72,8 +72,8 @@ export default function About() {
             </a>
             <a
               href="#contact"
-              className="bg-amber-50 hover:bg-amber-500 hover:text-white hover:border-amber-500 
-                transition-all duration-300 cursor-pointer pt-1 border-2 border-amber-100 rounded-3xl w-40 sm:w-52 
+              className="bg-teal-50 hover:bg-teal-500 hover:text-white hover:border-teal-500 
+                transition-all duration-300 cursor-pointer pt-1 border-2 border-teal-100 rounded-3xl w-40 sm:w-52 
                 flex justify-center items-center uppercase text-sm font-kalam"
             >
               Contact

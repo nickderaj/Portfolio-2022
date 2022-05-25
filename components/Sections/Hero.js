@@ -38,8 +38,8 @@ export default function Hero() {
           />
         </div>
         <div className="absolute w-full left-1/2 -bottom-6 -translate-x-1/2 text-center highlight text-slate-900 ">
-          <h1 className="text-lg md:text-2xl">Nick De Raj</h1>
-          <h2 className="text-sm sm:text-base">Full Stack Developer</h2>
+          <h1 className="text-lg md:text-2xl font-kalam">Nick De Raj</h1>
+          <h2 className="text-sm sm:text-base font-kalam">Full Stack Developer</h2>
         </div>
       </div>
     </BrickWall>
