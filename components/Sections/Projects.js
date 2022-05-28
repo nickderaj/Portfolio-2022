@@ -3,12 +3,12 @@ import Image from 'next/image';
 function Project({ href, src, alt }) {
   return (
     <a
-      className="rounded-xl drop-shadow-lg hover:drop-shadow-2xl hover:scale-[1.03] transition-all duration-300 relative"
+      className="rounded-xl drop-shadow-lg sm:hover:drop-shadow-2xl sm:hover:scale-[1.03] transition-all duration-300 relative"
       href={href}
       target="_blank"
       rel="noreferrer"
     >
-      <div className="opacity-0 hover:opacity-100 h-full w-full absolute bg-gradient-to-t from-zinc-800/[0.8] to-transparent rounded-xl z-20 transition-all duration-300">
+      <div className="hidden sm:block opacity-0 hover:opacity-100 h-full w-full absolute bg-gradient-to-t from-zinc-800/[0.8] to-transparent rounded-xl z-20 transition-all duration-300">
         <p className="absolute bottom-1 left-0 w-full text-center uppercase text-white">{alt}</p>
       </div>
       <Image src={src} alt={alt} width="600" height="300" className="rounded-xl" layout="responsive" />
@@ -35,7 +35,7 @@ export default function Projects() {
               <Image src="/svg/octocat.svg" alt="robot" width="50" height="50" />
             </a>
           </p>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6 py-6 w-full h-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6 py-6 w-full h-full">
             <Project
               href="https://github.com/nickderaj/Node-Natours-Project"
               src="/projects/1. natours.png"
