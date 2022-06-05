@@ -55,7 +55,7 @@ export default function WorkExp() {
               role="Full Stack Engineer"
               date="2021 - current"
               description="Data Labelling for AI Machine Learning. Main technologies used: Ruby on Rails, React.js, Next.js,
-          Node.js, AWS Infstracture & Docker."
+          Node.js, AWS Infrastructure & Docker."
               image="/work/rabbit.svg"
               dotted
             />
