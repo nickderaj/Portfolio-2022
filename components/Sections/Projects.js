@@ -47,17 +47,13 @@ export default function Projects() {
               alt="NFT Minting Dapp"
             />
             <Project
-              href="https://github.com/nickderaj/dnd-API"
+              href="https://github.com/nickderaj/Nextjs-Stripe-Integrated-Shop"
               src="/projects/3. stripe.png"
               alt="Next.js Shop w/ Stripe"
             />
+            <Project href="https://8sian.io/" src="/projects/4. dnd.png" alt="Next.js NFT Website" />
             <Project
-              href="https://github.com/nickderaj/Node-Natours-Project"
-              src="/projects/4. dnd.png"
-              alt="D&D API"
-            />
-            <Project
-              href="https://creds-demo.vercel.app/"
+              href="http://www.credsblockchain.com/"
               src="/projects/5. creds.png"
               alt="Modern Next.js Website"
             />
